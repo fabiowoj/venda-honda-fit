@@ -1,0 +1,9 @@
+# Fotos e vídeo originais: têm GPS e a placa visível. NUNCA publicar.
+fotos-originais/
+
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.venv/
+node_modules/

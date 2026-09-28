@@ -1,0 +1,93 @@
+{
+  "_como_usar": "Veja a seção 'Trocar ou adicionar fotos' no README.md. Depois de editar, rode: python3 scripts/fotos.py",
+  "fotos": [
+    {
+      "id": "frente-lateral",
+      "alt": "Honda New Fit 2009 cinza grafite, vista dianteira em três quartos",
+      "legenda": "Dianteira",
+      "galeria": true,
+      "girar": 0,
+      "ocultar": [[16.4, 59.8, 10.1, 6.2]]
+    },
+    {
+      "id": "frente",
+      "alt": "Honda New Fit 2009 visto de frente, faróis e grade",
+      "legenda": "Frente",
+      "galeria": true,
+      "girar": 0,
+      "ocultar": [[37.8, 72.2, 21.4, 5.9]]
+    },
+    {
+      "id": "traseira",
+      "alt": "Traseira do Honda New Fit 2009 com lanternas verticais",
+      "legenda": "Traseira",
+      "galeria": true,
+      "girar": 0,
+      "ocultar": [[62.4, 55.0, 18.5, 7.7]]
+    },
+    {
+      "id": "lateral",
+      "alt": "Lateral do Honda New Fit 2009 com rodas de liga leve",
+      "legenda": "Lateral",
+      "galeria": true,
+      "girar": 0,
+      "ocultar": [[7.4, 52.2, 6.6, 6.8]]
+    },
+    {
+      "id": "porta-malas",
+      "alt": "Porta-malas aberto do Honda New Fit 2009",
+      "legenda": "Porta-malas",
+      "galeria": true,
+      "girar": 90,
+      "ocultar": []
+    },
+    {
+      "id": "painel-instrumentos",
+      "alt": "Painel de instrumentos do Honda New Fit marcando 199.953 km",
+      "legenda": "Painel · 199.953 km",
+      "galeria": true,
+      "girar": 90,
+      "ocultar": []
+    },
+    {
+      "id": "bancos-dianteiros",
+      "alt": "Bancos dianteiros em couro cor ice do Honda New Fit",
+      "legenda": "Bancos dianteiros",
+      "galeria": true,
+      "girar": 90,
+      "ocultar": []
+    },
+    {
+      "id": "banco-traseiro",
+      "alt": "Banco traseiro em couro cor ice do Honda New Fit",
+      "legenda": "Banco traseiro",
+      "galeria": true,
+      "girar": 90,
+      "ocultar": []
+    },
+    {
+      "id": "interior-volante",
+      "alt": "Interior do Honda New Fit com volante em couro e multimídia",
+      "legenda": "Interior",
+      "galeria": true,
+      "girar": 90,
+      "ocultar": []
+    },
+    {
+      "id": "multimidia-navegacao",
+      "alt": "Multimídia de 10 polegadas mostrando navegação e música",
+      "legenda": "Multimídia · navegação",
+      "galeria": true,
+      "girar": 90,
+      "ocultar": []
+    },
+    {
+      "id": "multimidia-tela-inicial",
+      "alt": "Tela inicial da multimídia de 10 polegadas",
+      "legenda": "Multimídia · tela inicial",
+      "galeria": true,
+      "girar": 90,
+      "ocultar": []
+    }
+  ]
+}
