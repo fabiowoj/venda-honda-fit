@@ -3,7 +3,7 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://fabiowoj.github.io/venda-honda-fit/</loc>
-    <lastmod>2026-09-28</lastmod>
+    <lastmod>2026-09-30</lastmod>
     <image:image><image:loc>https://fabiowoj.github.io/venda-honda-fit/assets/img/frente-lateral-1600.jpg</image:loc></image:image>
     <image:image><image:loc>https://fabiowoj.github.io/venda-honda-fit/assets/img/frente-1600.jpg</image:loc></image:image>
     <image:image><image:loc>https://fabiowoj.github.io/venda-honda-fit/assets/img/traseira-1600.jpg</image:loc></image:image>
@@ -15,5 +15,7 @@
     <image:image><image:loc>https://fabiowoj.github.io/venda-honda-fit/assets/img/interior-volante-1600.jpg</image:loc></image:image>
     <image:image><image:loc>https://fabiowoj.github.io/venda-honda-fit/assets/img/multimidia-navegacao-1600.jpg</image:loc></image:image>
     <image:image><image:loc>https://fabiowoj.github.io/venda-honda-fit/assets/img/multimidia-tela-inicial-1600.jpg</image:loc></image:image>
+    <image:image><image:loc>https://fabiowoj.github.io/venda-honda-fit/assets/img/manual-chave-reserva-1600.jpg</image:loc></image:image>
+    <image:image><image:loc>https://fabiowoj.github.io/venda-honda-fit/assets/img/pasta-manual-1600.jpg</image:loc></image:image>
   </url>
 </urlset>

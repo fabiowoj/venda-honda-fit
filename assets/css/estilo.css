@@ -174,6 +174,18 @@ h1, h2 { overflow-wrap: break-word; }
 .itens { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr)); gap: 1px; background: var(--linha); border: 1px solid var(--linha); }
 .itens li { background: var(--fundo); padding: 20px; font-size: 16px; line-height: 1.35; }
 
+/* ---------- Acompanha (manual e chave reserva) ---------- */
+.acompanha {
+  padding-top: 4vh; padding-bottom: 14vh;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr)); gap: clamp(40px, 6vw, 96px); align-items: center;
+}
+.acompanha-foto { overflow: hidden; aspect-ratio: 4 / 3; border-radius: 4px; background: var(--fundo-2); }
+.acompanha-foto img { width: 100%; height: 100%; object-fit: cover; }
+.acompanha-texto { display: grid; gap: 28px; container-type: inline-size; }
+/* "RESERVA" mede ~6,4em */
+.acompanha h2 { font-size: clamp(28px, 11.4cqi, 76px); }
+.acompanha-texto > p:not(.rotulo) { font-size: clamp(17px, 1.4vw, 19px); line-height: 1.45; color: var(--texto-2); max-width: 40ch; }
+
 /* ---------- Interior ---------- */
 .interior { padding: 6vh 0 16vh; }
 .interior h2 { margin-top: 16px; font-weight: 900; font-size: clamp(46px, 11vw, 180px); line-height: .85; color: var(--texto-2); }
@@ -210,7 +222,7 @@ h1, h2 { overflow-wrap: break-word; }
 .multimidia-texto { display: grid; gap: 28px; container-type: inline-size; }
 /* "POLEGADAS" mede 8,1em */
 .multimidia h2 { font-size: clamp(28px, 11.4cqi, 76px); }
-.multimidia-texto > p { font-size: clamp(17px, 1.4vw, 19px); line-height: 1.45; color: var(--texto-2); max-width: 40ch; }
+.multimidia-texto > p:not(.rotulo) { font-size: clamp(17px, 1.4vw, 19px); line-height: 1.45; color: var(--texto-2); max-width: 40ch; }
 .caixa { padding: 20px 22px; border: 1px solid var(--linha); border-radius: 4px; font-size: 16px; line-height: 1.45; color: var(--suave); }
 .multimidia-fotos { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
 .multimidia-fotos .desce { margin-top: 10vh; }

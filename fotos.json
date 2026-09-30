@@ -88,6 +88,22 @@
       "galeria": true,
       "girar": 90,
       "ocultar": []
+    },
+    {
+      "id": "manual-chave-reserva",
+      "alt": "Manual do proprietário, manual de manutenção e garantia do Honda New Fit e a chave reserva na pasta original",
+      "legenda": "Manuais e chave reserva",
+      "galeria": true,
+      "girar": 0,
+      "ocultar": []
+    },
+    {
+      "id": "pasta-manual",
+      "alt": "Pasta original Honda dos manuais do carro",
+      "legenda": "Pasta original dos manuais",
+      "galeria": true,
+      "girar": 0,
+      "ocultar": []
     }
   ]
 }
