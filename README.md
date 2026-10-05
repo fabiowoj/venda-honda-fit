@@ -49,6 +49,19 @@ Para descobrir os números, abra a foto num editor como o Paint ou o Fotos, veja
 
 Salve como `fotos-originais/video-original.mp4` e rode `python3 scripts/fotos.py`. O script gera as duas versões (com um quadro-chave a cada 4 quadros, para acompanhar o scroll sem engasgar), o pôster e a imagem de compartilhamento `assets/og-image.jpg`. Ele não apaga placas no vídeo: o vídeo atual já não mostra a placa.
 
+## Marcar como vendido
+
+**Pelo GitHub (até pelo celular):**
+1. Abra a aba **Actions** do repositório → **Vendido / à venda** (na lista da esquerda).
+2. Toque em **Run workflow**, escolha **vendido** (ou **à venda** para desfazer) e confirme.
+3. Em 1 ou 2 minutos o site atualiza.
+
+**Pelo computador:** `python3 scripts/vendido.py sim` (ou `nao`), depois commit e push.
+
+Quando vendido, o site mostra o carimbo **VENDIDO**, o preço riscado e um agradecimento no lugar do contato. Somem os botões de WhatsApp e e-mail e os links da OLX e da Webmotors. O título e os dados para o Google passam a dizer "vendido", e a página pede para sair da busca (`noindex`), para ninguém mais ligar procurando o carro. Tudo volta com **à venda**.
+
+Os textos das duas versões ficam no `index.html`, marcados com `data-se="a-venda"` ou `data-se="vendido"`.
+
 ## Mudar preço, textos e links
 
 Tudo fica no `index.html`:
@@ -56,7 +69,6 @@ Tudo fica no `index.html`:
 - **Preço:** procure `37.500` e `37500`. O valor aparece no título, na descrição, nos metadados, no JSON-LD (`"price"`), no `data-preco` e nos textos. Troque também no `llms.txt`.
 - **FIPE:** atributos `data-fipe-*` da seção `#preco`. O site busca o valor atualizado na BrasilAPI sempre que abre e guarda o resultado por 12 horas. Se a busca falhar, usa `data-fipe-valor` (R$ 39.514, setembro de 2026). O código 014039-2 é o da versão manual.
 - **Anúncios da Webmotors e da OLX:** no fim do `index.html`, cole a URL no `href=""` de cada anúncio e apague a palavra `hidden`. Enquanto estiverem vazios, os botões ficam escondidos.
-- **Vendido?** Troque `"availability": "https://schema.org/InStock"` por `SoldOut` e `product:availability` por `out of stock`, para o Google parar de mostrar o carro como disponível.
 
 ## Segurança e privacidade
 

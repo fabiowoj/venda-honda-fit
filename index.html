@@ -124,7 +124,7 @@
 }
 </script>
 </head>
-<body>
+<body data-status="a-venda">
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
 <header class="menu">
@@ -134,7 +134,8 @@
     <a href="#historia">História</a>
     <a href="#interior">Interior</a>
     <a href="#galeria">Fotos</a>
-    <a class="botao-whats" href="https://wa.me/5561981605807?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Honda%20New%20Fit%20LX%201.4%202009%20e%20tenho%20interesse." target="_blank" rel="noopener noreferrer">
+    <span class="selo-vendido" data-se="vendido" role="status">Vendido</span>
+    <a class="botao-whats" data-se="a-venda" href="https://wa.me/5561981605807?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Honda%20New%20Fit%20LX%201.4%202009%20e%20tenho%20interesse." target="_blank" rel="noopener noreferrer">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
       WhatsApp
     </a>
@@ -151,8 +152,9 @@
     </video>
     <div class="abertura-sombra"></div>
     <div class="abertura-titulo">
-      <p class="sobre">À venda · Brasília, DF</p>
-      <h1>Honda<br>New Fit<span class="so-leitor"> LX 1.4 2009 à venda</span></h1>
+      <p class="sobre"><span data-se="a-venda">À venda</span><span data-se="vendido">Vendido</span> · Brasília, DF</p>
+      <h1>Honda<br>New Fit<span class="so-leitor" data-se="a-venda"> LX 1.4 2009 à venda</span><span class="so-leitor" data-se="vendido"> LX 1.4 2009 vendido</span></h1>
+      <p class="carimbo" data-se="vendido">Vendido</p>
     </div>
     <div class="abertura-info">
       <ul class="selos" aria-label="Resumo">
@@ -164,7 +166,7 @@
         <li><span>Tudo funcionando</span></li>
       </ul>
       <div class="abertura-preco">
-        <div class="rot">Valor</div>
+        <div class="rot"><span data-se="a-venda">Valor</span><span data-se="vendido">Anunciado por</span></div>
         <strong data-preco-fmt>R$ 37.500,00</strong>
       </div>
     </div>
@@ -420,8 +422,9 @@
 
 <section id="contato" class="contato conteudo" aria-labelledby="contato-titulo">
   <p class="rotulo" data-revelar>Contato</p>
-  <h2 id="contato-titulo" class="display" data-revelar>Vamos<br>conversar?</h2>
-  <div class="cartoes">
+  <h2 id="contato-titulo" class="display" data-revelar><span data-se="a-venda">Vamos<br>conversar?</span><span data-se="vendido">Vendido.<br>Obrigado!</span></h2>
+  <p class="vendido-texto" data-se="vendido" data-revelar>O Honda New Fit encontrou um novo dono. Obrigado a todos que entraram em contato e se interessaram pelo carro.</p>
+  <div class="cartoes" data-se="a-venda">
     <a class="cartao whats" data-revelar href="https://wa.me/5561981605807?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Honda%20New%20Fit%20LX%201.4%202009%20e%20tenho%20interesse." target="_blank" rel="noopener noreferrer">
       <small>WhatsApp</small>
       <strong>(61) 98160-5807</strong>
@@ -434,7 +437,7 @@
     </a>
   </div>
   <!-- Links dos anúncios: cole a URL no href e apague a palavra "hidden". -->
-  <div class="anuncios">
+  <div class="anuncios" data-se="a-venda">
     <a class="anuncio" data-revelar href="https://www.webmotors.com.br/comprar/honda/fit/14-lx-16v-flex-4p-manual/4-portas/2009-2009/80604354" target="_blank" rel="noopener noreferrer"><span>Anúncio na Webmotors</span><span aria-hidden="true">↗</span></a>
     <a class="anuncio" data-revelar href="https://df.olx.com.br/distrito-federal-e-regiao/autos-e-pecas/carros-vans-e-utilitarios/honda-fit-lx-1-4-1-4-flex-8v-16v-5p-mec-2009-1540096788" target="_blank" rel="noopener noreferrer"><span>Anúncio na OLX</span><span aria-hidden="true">↗</span></a>
   </div>
@@ -446,7 +449,7 @@
 
 </main>
 
-<a class="botao-whats flutuante" href="https://wa.me/5561981605807?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Honda%20New%20Fit%20LX%201.4%202009%20e%20tenho%20interesse." target="_blank" rel="noopener noreferrer" aria-label="Chamar no WhatsApp">
+<a class="botao-whats flutuante" data-se="a-venda" href="https://wa.me/5561981605807?text=Ol%C3%A1!%20Vi%20o%20site%20do%20Honda%20New%20Fit%20LX%201.4%202009%20e%20tenho%20interesse." target="_blank" rel="noopener noreferrer" aria-label="Chamar no WhatsApp">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
   WhatsApp<span class="preco-flut"> · <span data-preco-fmt>R$ 37.500,00</span></span>
 </a>
